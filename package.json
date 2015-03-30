@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "actionhero" : "",
     "mongodb": "~2.0",
     "amqplib": "",
     "grunt": "~0.4.2",
