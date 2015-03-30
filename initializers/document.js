@@ -24,9 +24,10 @@ module.exports = {
           //next();
         };
 
-        function replyHandler(err, bla) {
-          api.log('Received reply from job: ' + bla);
-          next(null,bla);
+        function replyHandler(err, msg) {
+          if (err) api.log("Error waiting for a reply: " + err);
+          api.log('Received reply from job: ' + msg);
+          next(err,msg);
         };
 
       },
